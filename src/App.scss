@@ -1,0 +1,18 @@
+$myColor: red;
+
+h1 {
+  color: $myColor;
+}
+
+// Override default variables before the import
+$body-bg: #f1f1f1;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+
+.nav-link {
+  &.active {
+    color: #5a5858;
+  }
+}
